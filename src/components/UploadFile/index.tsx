@@ -1,5 +1,8 @@
 import { useState, DragEvent, ChangeEvent } from 'react';
-import styles from './styles.module.css'; // Importando los estilos
+
+import { UploadCloud } from '../icons/UploadCloud';
+
+import styles from './styles.module.css';
 
 export const FileUpload: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -29,27 +32,24 @@ export const FileUpload: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <h3 className={styles.title}>Upload Your CV</h3>
-      <div
-        className={`${styles.dropZone} ${dragging ? styles.dragging : ''}`}
-        onDragOver={handleDragOver}
-        onDragLeave={handleDragLeave}
-        onDrop={handleDrop}
-      >
-        <div className={styles.uploadIcon}>
-          {dragging ? '🔄' : file ? '✅' : '📤'}
-        </div>
+    <div
+      className={`${styles.dropZone} ${dragging ? styles.dragging : ''}`}
+      onDragOver={handleDragOver}
+      onDragLeave={handleDragLeave}
+      onDrop={handleDrop}
+    >
+      <div className={styles.uploadIcon}>
+        {dragging ? '🔄' : file ? '✅' : <UploadCloud />}
         <p>Arrastra y suelta tu CV aquí</p>
-        <label className={styles.button}>
-          Archivos
-          <input
-            type="file"
-            onChange={handleFileChange}
-            className={styles.input}
-          />
-        </label>
       </div>
+      <label className={styles.button}>
+        Archivos
+        <input
+          type="file"
+          onChange={handleFileChange}
+          className={styles.input}
+        />
+      </label>
     </div>
   );
 };

@@ -7,4 +7,14 @@
 
 .container {
   grid-column: span 2;
+  background-color: var(--color-tertiary);
+  padding: 20px;
+  border-radius: 0px 0px 12px 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-column: span 1;
+  }
 }

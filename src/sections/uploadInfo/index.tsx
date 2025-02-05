@@ -14,6 +14,7 @@ export const UploadInfo = () => {
       <Card title="URL de puesto de vacante">
         <JobPostingURL />
       </Card>
+      <i className="divider" />
     </div>
   );
 };

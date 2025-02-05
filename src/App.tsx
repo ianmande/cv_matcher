@@ -9,7 +9,6 @@ function App() {
     <main className="container">
       <Header />
       <UploadInfo />
-      <i className="divider" />
       <FeedBackSection />
     </main>
   );

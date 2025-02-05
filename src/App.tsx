@@ -8,8 +8,10 @@ function App() {
   return (
     <main className="container">
       <Header />
-      <UploadInfo />
-      <FeedBackSection />
+      <div className="bdy">
+        <UploadInfo />
+        <FeedBackSection />
+      </div>
     </main>
   );
 }

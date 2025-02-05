@@ -16,6 +16,11 @@
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
-    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: 10px;
   }
 }

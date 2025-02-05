@@ -8,10 +8,9 @@ function App() {
   return (
     <main className="container">
       <Header />
-      <div className="body">
-        <UploadInfo />
-        <FeedBackSection />
-      </div>
+      <UploadInfo />
+      <i className="divider" />
+      <FeedBackSection />
     </main>
   );
 }

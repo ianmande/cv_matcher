@@ -20,10 +20,8 @@
 }
 
 @media (max-width: 768px) {
-  .body {
-    margin: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  .divider {
+    display: block;
+    height: 16p;
   }
 }

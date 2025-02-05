@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="container">
       <Header />
-      <div className="bdy">
+      <div className="body">
         <UploadInfo />
         <FeedBackSection />
       </div>

@@ -1,0 +1,10 @@
+.main_title {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.container {
+  grid-column: span 2;
+}

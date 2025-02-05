@@ -1,6 +1,6 @@
 import { Card } from '../../components/card';
 import { JobPostingURL } from '../../components/jobPositingURL';
-import { FileUpload } from '../../components/uploadFile';
+import { FileUpload } from '../../components/uploadFile/UploadFIle';
 
 import styles from './styles.module.css';
 
